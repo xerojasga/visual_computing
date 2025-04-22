@@ -1,12 +1,76 @@
-# React + Vite
+# Three.js Animated Sphere Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project showcases an interactive 3D scene built with React, Three.js, and React Three Fiber. The main feature is an animated sphere that moves in a circular trajectory while rotating on its axis, changing color, and scaling dynamically.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Animated 3D Sphere**: A sphere that follows a circular path while rotating on multiple axes
+- **Dynamic Color Changes**: The sphere's color shifts through the color spectrum over time
+- **Distortion Effects**: The sphere's surface has a distortion effect that adds visual interest
+- **Interactive Camera Controls**: Users can rotate, pan, and zoom the camera to view the scene from different angles
+- **Grid and Axes Helpers**: Visual aids to help understand the 3D space
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Three.js
+- React Three Fiber
+- React Three Drei
+- Vite
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+### Running the Application
+
+To start the development server:
+
+```sh
+npm run dev
+```
+
+The application will be available at `http://localhost:5173` (or another port if 5173 is in use).
+
+### Building for Production
+
+To create a production build:
+
+```sh
+npm run build
+```
+
+To preview the production build:
+
+```sh
+npm run preview
+```
+
+## Project Structure
+
+- `src/components/animated-object.tsx`: Contains the animated sphere component with its animation logic
+- `src/components/scene.tsx`: Sets up the 3D scene with lighting, camera controls, and the animated object
+- `src/App.jsx`: Main application component that renders the scene
+
+## Customization
+
+You can modify the animation parameters in `animated-object.tsx` to change:
+
+- The radius of the circular path
+- The rotation speed
+- The scaling effect
+- The color transition speed
+- The distortion effect
